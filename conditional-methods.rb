@@ -14,9 +14,21 @@ def is_even(num)
 end
 p is_even(6)
 # Create a method that takes a number as an argument and prints "Valid" if the number is between 1 and 10 (inclusive) and "Invalid" otherwise.
-
-
+def my_num(num)
+  if  num > 1 && num < 10
+    return 'valid'
+  else
+    return 'Invalid'
+  end
+end
+p my_num(16)
 # Create a method that takes in a string and determines if the string is a palindrome.
+def palindrome?(str)
+  str == str.reverse ? 'Palindrome' : 'Not a palindrome'
+end
+
+p palindrome?("racecar")
+p palindrome?("hello")
 # ✂️ Challenge: Rock, Paper, Scissors
 # As the first user, I can see a prompt in the terminal to enter my name.
 # As the second user, I can see a prompt in the terminal to enter my name.
