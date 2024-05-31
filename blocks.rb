@@ -39,14 +39,26 @@ str_arr = ["sand", "pipe", "kettle", "practice", "jet"]
 least = shortest_word(str_arr)
 p least
 # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest
-def sorted_odds(array)
+def sort_odds(array)
   array.select { |num| num.odd? }.sort
 end
 array = [33, 14, 28, 11, 22, 8, 12, 19]
-sorted_odd_numbers = sorted_odds(array)
+sorted_odd_numbers = sort_odds(array)
 p sorted_odd_numbers
 # Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercase letters should be returned lowercased and all lowercased letters should be returned in uppercase letters.
+def word_reverse(array)
+array.map { |str| str.swapcase }
+end
+strings = ["Sand", "Pipe", "Kettle", "Practice", "Jet"]
+swap_reverse = word_reverse(strings)
+p swap_reverse
 # Create a method that will take in an array of numbers and return an array with the remainder of each number when divided by 2.
+def div_arr(array)
+array.map {|value|value % 2}
+end
+new_arr = [33, 14, 28, 11, 22, 8, 12, 19]
+remainder = div_arr(new_arr)
+p remainder
 # Create a method that will take in a range of letters and return an array with all the letters capitalized.
 
 # FizzBuzz: Create a method that prints the numbers from 1 to 100. For multiples of three print Fizz instead of the number, for multiples of five print Buzz instead of the number, for numbers that are multiples of both three and five print FizzBuzz, for all other numbers print the number.
