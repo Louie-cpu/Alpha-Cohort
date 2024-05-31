@@ -15,6 +15,12 @@ nums.each do |value|
   p value * 5
 end
 # Create a method that takes in an array of lowercase words and capitalizes all of the words, permanently modifying the original array.
+words = ["sand", "pipe", "kettle", "practice", "jet"]
+word_cap = words.map { |str| str.upcase }
+
+p word_cap
+
+
 # Create a method that takes in an array of numbers and returns the largest number in the array.
 # Create a method that takes in an array of words and returns the word with the least number of characters.
 # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
