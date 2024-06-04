@@ -60,7 +60,12 @@ new_arr = [33, 14, 28, 11, 22, 8, 12, 19]
 remainder = div_arr(new_arr)
 p remainder
 # Create a method that will take in a range of letters and return an array with all the letters capitalized.
-
+def letter_cap(range)
+  range.to_a.map { |letter| letter.upcase }
+end
+letter_range = 'a'..'z'
+letter_cap = letter_cap(letter_range)
+p letter_cap
 # FizzBuzz: Create a method that prints the numbers from 1 to 100. For multiples of three print Fizz instead of the number, for multiples of five print Buzz instead of the number, for numbers that are multiples of both three and five print FizzBuzz, for all other numbers print the number.
 # Create a method that takes in an array of words and returns all the words that start with a particular letter. Example: Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango'].
 # Create a method that takes in an array of mixed data types and returns an array without any false, null, 0, or blank values.
